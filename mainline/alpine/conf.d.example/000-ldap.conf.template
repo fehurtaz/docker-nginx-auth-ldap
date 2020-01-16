@@ -4,7 +4,7 @@ auth_ldap_cache_expiration_time 600000; # 10 min
 auth_ldap_cache_size 1000;
 
 ldap_server ldap1 {
-    url ${NGINX_AUTH_LDAP_URL};
+    auth_ldap_url ${NGINX_AUTH_LDAP_URL};
     binddn ${NGINX_AUTH_LDAP_BINDDN};
     binddn_passwd ${NGINX_AUTH_LDAP_BINDPW};
     require valid_user;
